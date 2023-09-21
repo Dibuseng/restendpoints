@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "c4cd286e-c751-4bfe-b596-ce05e76daf44",
+		"name": "Investor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14056603",
+		"_collection_link": "https://red-eclipse-784217.postman.co/workspace/New-Team-Workspace~eca0ca14-4815-4050-b391-b08f684045de/collection/14056603-c4cd286e-c751-4bfe-b596-ce05e76daf44?action=share&source=collection_link&creator=14056603"
+	},
+	"item": [
+		{
+			"name": "Get All Investors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/findAllInvst",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"findAllInvst"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add an Investor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"name\":\"Dibuseng\",\r\n    \"surname\":\"Dikgoele\",\r\n    \"age\":\"29\",\r\n    \"emailAddress\":\"dibuseng@gmail.com\",\r\n    \"product\":\"savings\",\r\n    \"balance\":\"5000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveInvestor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveInvestor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Investor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",  \r\n   \"name\": \"Lebo\",\r\n   \"surname\": \"Dikgole\",\r\n   \"age\": \"28\",   \r\n   \"email\": \"dibuseng@gmail.com\",\r\n   \"product\": \"savings\",\r\n   \"balance\": \"1000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateInvestor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateInvestor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Investor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/findAllInvst",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"findAllInvst"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Investor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/customer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
